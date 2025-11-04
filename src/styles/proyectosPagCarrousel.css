@@ -1,83 +1,64 @@
-/* ======================================================= */
-/* 1. Estilos del Contenedor Principal (.divAllCarrousel) */
-/* ======================================================= */
-
 .divAllCarrousel {
-    max-width: 1100px; /* Aumentamos un poco el ancho para la información */
+    max-width: 1100px;
     margin: 40px auto;
     padding: 30px;
-    background-color: #0d0d0d; /* Fondo oscuro */
-    color: #e0e0e0; /* Gris claro para el texto general */
+    background-color: #0d0d0d;
+    color: #e0e0e0;
     border-radius: 12px;
-    /* Borde y sombra sutil de neón azul */
-    border: 1px solid rgba(0, 170, 255, 0.2); 
+    border: 1px solid rgba(0, 170, 255, 0.2);
     box-shadow: 0 0 25px rgba(0, 170, 255, 0.1), 0 10px 30px rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
-    gap: 40px; 
+    gap: 40px;
 }
 
-/* ======================================================= */
-/* 2. CARRUSEL SECUNDARIO/IMAGEN PRINCIPAL (.proyecto1CardsCarrouselContainer) */
-/* (Contiene la imagen grande y los botones de navegación de imagen) */
-/* ======================================================= */
-
 .proyecto1CardsCarrouselContainer {
-    /* 🔑 CLAVE: Permite que el Link actúe como un bloque y contenedor relativo */
-    display: block; 
-    position: relative; 
+    display: block;
+    position: relative;
     width: 100%;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-    text-decoration: none; /* Quita el subrayado del Link */
-    /* Aseguramos que el contenedor se estire para dar espacio a la imagen */
-    height: 480px; 
+    height: 480px;
 }
 
 .imgCardProyecto {
     width: 100%;
-    height: 100%; /* Ocupa todo el contenedor del Link */
-    object-fit: cover; /* Asegura que la imagen cubra el espacio */
+    height: 100%;
+    object-fit: cover;
     transition: opacity 0.5s ease-in-out;
-    display: block; 
 }
 
-/* Estilos de los botones de navegación de la imagen grande (◀️ y ▶️) */
-/* NOTA: Estos botones deben estar fuera del <Link> si quieres que el Link funcione.
-   Si los mantuviste dentro del Link (como en el código de arriba), el Link primario
-   debe manejarse con un evento onClick o deben estar posicionados para ser clickables.
-   Ajustaré la posición para que funcionen sobre la imagen.
-*/
-.proyecto1CardsCarrouselContainer .btnLeft, 
-.proyecto1CardsCarrouselContainer .btnRight {
+.btnImgLeft,
+.btnImgRight {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
-    color: #00aaff; /* Color de acento para el ícono */
-    border: 1px solid #00aaff; 
+    background: rgba(0, 0, 0, 0.7);
+    color: #00aaff;
+    border: 1px solid #00aaff;
     padding: 10px 15px;
     font-size: 20px;
     cursor: pointer;
     z-index: 10;
-    border-radius: 50%; /* Circular */
-    transition: background-color 0.3s;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.proyecto1CardsCarrouselContainer .btnLeft:hover, 
-.proyecto1CardsCarrouselContainer .btnRight:hover {
-    background-color: #00aaff; /* Relleno azul al pasar el mouse */
-    color: #0d0d0d; 
+.btnImgLeft:hover,
+.btnImgRight:hover {
+    background-color: #00aaff;
+    color: #0d0d0d;
+    transform: translateY(-50%) scale(1.1);
 }
 
-.proyecto1CardsCarrouselContainer .btnLeft { left: 20px; }
-.proyecto1CardsCarrouselContainer .btnRight { right: 20px; }
+.btnImgLeft {
+    left: 20px;
+}
 
-
-/* ======================================================= */
-/* 3. CARRUSEL PRINCIPAL (Tarjeta de Proyecto, Info, y Controles) */
-/* ======================================================= */
+.btnImgRight {
+    right: 20px;
+}
 
 .pryectos2CardsCarrouselContainer {
     display: flex;
@@ -88,20 +69,15 @@
 }
 
 .containerCardCarrousel {
-    /* Contenedor de la información textual */
     padding: 15px;
     width: 100%;
-}
-
-.imgCardProyectos {
-    display: none; /* Ocultamos la imagen si ya está en el carrusel superior */
 }
 
 .titleCardProyectos {
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 8px;
-    color: #00aaff; /* Azul eléctrico */
+    color: #00aaff;
     text-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
     letter-spacing: 1px;
 }
@@ -114,7 +90,6 @@
     margin: 0 auto 20px;
 }
 
-/* --- LISTA DE INFORMACIÓN (ulCardProyectos) --- */
 .ulCardProyectos {
     list-style: none;
     padding: 0;
@@ -122,21 +97,21 @@
     max-width: 700px;
     display: flex;
     justify-content: center;
-    gap: 30px; /* Espacio entre las viñetas de info */
+    gap: 30px;
 }
 
-.liTecnoProyectos, .liAlmaceProyectos {
+.liTecnoProyectos,
+.liAlmaceProyectos {
     background-color: #1a1a1a;
     padding: 8px 15px;
     border-radius: 5px;
-    border-left: 3px solid #00aaff; /* Línea de acento */
+    border-left: 3px solid #00aaff;
     font-size: 0.95em;
     font-weight: 500;
     color: #ffffff;
     text-align: left;
 }
 
-/* --- ENLACE DE GITHUB (linkGitProyectos) --- */
 .linkGitProyectos {
     display: inline-block;
     margin-top: 20px;
@@ -145,7 +120,7 @@
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid #ffffff; /* Borde blanco inicial */
+    border: 2px solid #ffffff;
     border-radius: 6px;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
     text-transform: uppercase;
@@ -159,27 +134,25 @@
     box-shadow: 0 0 10px rgba(0, 170, 255, 0.7);
 }
 
-/* --- CONTENEDOR DE BOTONES DE PROYECTO (.divButtonsCarrpuselProyectos) --- */
 .divButtonsCarrpuselProyectos {
     width: 100%;
     display: flex;
-    justify-content: center; 
-    gap: 40px; /* Más espacio entre los botones */
+    justify-content: center;
+    gap: 40px;
     padding: 0 10px;
     margin-top: 15px;
 }
 
-/* Estilos de los botones de navegación principal */
 .divButtonsCarrpuselProyectos .btnLeft,
 .divButtonsCarrpuselProyectos .btnRight {
-    background-color: #1f1f1f; 
+    background-color: #1f1f1f;
     color: #00aaff;
-    border: 2px solid #00aaff; 
+    border: 2px solid #00aaff;
     padding: 12px 25px;
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 30px; /* Bordes redondeados tipo píldora */
+    border-radius: 30px;
     transition: background-color 0.3s, transform 0.3s;
     min-width: 240px;
     text-transform: uppercase;
@@ -188,8 +161,97 @@
 
 .divButtonsCarrpuselProyectos .btnLeft:hover,
 .divButtonsCarrpuselProyectos .btnRight:hover {
-    background-color: #00aaff; 
+    background-color: #00aaff;
     color: #0d0d0d;
-    transform: translateY(-3px); 
-    box-shadow: 0 5px 15px rgba(0, 170, 255, 0.4); 
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 170, 255, 0.4);
+}
+
+@media (max-width: 1050px) {
+    .divAllCarrousel {
+        max-width: 90%;
+        padding: 25px;
+        gap: 30px;
+    }
+
+    .titleCardProyectos {
+        font-size: 1.8em;
+    }
+
+    .descCardProyectos {
+        font-size: 1em;
+    }
+
+    .proyecto1CardsCarrouselContainer {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .divAllCarrousel {
+        padding: 20px 15px;
+        gap: 20px;
+        margin: 20px auto;
+    }
+
+    .proyecto1CardsCarrouselContainer {
+        height: 250px;
+    }
+
+    .titleCardProyectos {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .descCardProyectos {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+
+    .ulCardProyectos {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .liTecnoProyectos,
+    .liAlmaceProyectos {
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .divButtonsCarrpuselProyectos {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        padding: 0;
+    }
+
+    .divButtonsCarrpuselProyectos .btnLeft,
+    .divButtonsCarrpuselProyectos .btnRight {
+        width: 90%;
+        min-width: 0;
+        max-width: 350px;
+        padding: 15px 10px;
+        font-size: 1em;
+    }
+
+    .btnImgLeft,
+    .btnImgRight {
+        padding: 8px 10px;
+        font-size: 16px;
+        top: 40%;
+        transform: translateY(-40%);
+    }
+
+    .btnImgLeft {
+        left: 10px;
+    }
+
+    .btnImgRight {
+        right: 10px;
+    }
 }

@@ -122,8 +122,8 @@ function CarrouselProyectosPage() {
         <Link to={`/proyectosInfo/${mainIndex}`}>
         <img className='imgCardProyecto' src={aloneProject.secondaryImgs[secondaryIndex].src} alt={aloneProject.secondaryImgs[secondaryIndex].alt} />
        </Link>
-        <button className='btnLeft' onClick={prevSecondarySlide}> ◀️ </button>
-        <button className='btnRight' onClick={nextSecondarySlide}> ▶️ </button>
+        <button className='btnImgLeft' onClick={prevSecondarySlide}> ⬅️ </button>
+        <button className='btnImgRight' onClick={nextSecondarySlide}> ➡️ </button>
       </div>
 
   

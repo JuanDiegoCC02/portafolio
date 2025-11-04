@@ -1,4 +1,5 @@
   import React, { useState } from 'react'
+  import { Link } from 'react-router-dom'
   import "../styles/portadaCarrusel.css";
   import homeBE from "../imagenesBooksExchange/homeBE.PNG";
   import homeNA from "../imagenesNumbAstro/homeNA.PNG";
@@ -30,14 +31,16 @@
     return (
       <div className="allDivCarrousel">
         <div className="containerCardCarrousel">
-        <a href="/proyectosPage"> <img className='imgCardCarrousel' src={src} alt={title} /></a>
+        <Link to="/proyectosPage">
+          <img className='imgCardCarrousel' src={src} alt={title} />
+        </Link>
           <h3 className='titleCardCarrousel'>{title}</h3>
           <p className='descCardCarrousel'>{desc}</p>
         </div>
 
         <div className="divCarrousel-buttons">
-          <button className='btnLeft' onClick={prevSlide}>  ◀️ </button>
-          <button className='btnRight' onClick={nextSlide}> ▶️ </button>
+          <button className='btnLeft' onClick={prevSlide}>⬅️</button>
+          <button className='btnRight' onClick={nextSlide}>➡️</button>
         </div>
       </div>
     );

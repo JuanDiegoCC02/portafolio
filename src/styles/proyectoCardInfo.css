@@ -1,95 +1,155 @@
-/* Contenedor de la card */
 .container-CardInfoProyecto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background: #ffffff;
-  border: 1px solid #dcdcdc;
-  border-radius: 14px;
-  padding: 24px;
-  max-width: 650px;
-  margin: 40px auto;  /* centra en horizontal */
-  color: #2c2c2c;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center; /* centra títulos y textos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    border: 1px solid rgba(0, 170, 255, 0.4);
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+    text-align: left;
 }
 
 .container-CardInfoProyecto:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.9), 0 0 15px rgba(0, 170, 255, 0.4);
 }
 
-/* Título */
 .titleInfoProyecto {
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 18px;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 10px;
-  width: 100%;
-  text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #00aaff;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #00aaff;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
-/* Imagen */
-.IMGInfoProyecto {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-}
-
-/* Texto */
 .detallePagInfoProyecto {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #444;
-  margin-bottom: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 25px;
 }
 
 .descInfoProyecto {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 18px;
+    font-size: 1rem;
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    border-left: 3px solid #333;
+    padding-left: 15px;
 }
 
-/* Lista */
+.IMGInfoProyecto {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
 .UlProyectoInfo {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 0 18px 0;
-  width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .LiProyectoInfo {
-  font-size: 0.95rem;
-  padding: 6px 0;
-  border-bottom: 1px solid #eee;
-  color: #333;
-  text-align: left;
+    font-size: 0.95rem;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: #00aaff1a;
+    border: 1px solid #00aaff;
+    color: #00aaff;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s;
 }
 
-/* Botón GitHub */
+.LiProyectoInfo:hover {
+    background-color: #00aaff40;
+}
+
 .LinkGithubInfoProyecto {
-  display: inline-block;
-  text-decoration: none;
-  background: #24292f; /* color GitHub */
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: background 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    background: #24292f;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s;
+    border: 2px solid #24292f;
 }
 
 .LinkGithubInfoProyecto:hover {
-  background: #444c56;
+    background: #00aaff;
+    color: #0d0d0d;
+    border-color: #00aaff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .container-CardInfoProyecto {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 95%;
+    }
+
+    .titleInfoProyecto {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .detallePagInfoProyecto {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .descInfoProyecto {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+        padding-left: 10px;
+    }
+
+    .IMGInfoProyecto {
+        max-height: 300px;
+    }
+
+    .UlProyectoInfo {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .LiProyectoInfo {
+        width: 80%;
+        text-align: center;
+    }
+
+    .LinkGithubInfoProyecto {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
 }
