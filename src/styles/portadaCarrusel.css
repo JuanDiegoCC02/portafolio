@@ -1,5 +1,4 @@
 .allDivCarrousel {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +61,7 @@
 
 .btnLeft, .btnRight {
 
-  background: rgba(41, 7, 82, 0.986); 
+  background: rgba(29, 4, 59, 0.986); 
   padding: 3%;
   border: 3px solid black;
   border-radius: 4px; /* Bordes cuadrados sutiles */
