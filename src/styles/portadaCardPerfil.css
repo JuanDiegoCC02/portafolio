@@ -1,0 +1,51 @@
+
+.containerFtPerfilPortd {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.FtPerfilPortada {
+  margin-top: 15%;
+  border-radius: 50%;
+  border: 6px solid #00456da9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+.FtPerfilPortd:hover {
+  transform: scale(1.04);
+}
+
+
+.containerCardPerfil {
+  text-align: center;
+  margin-top: 15px;
+  background: #161616f5;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.titleName {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+text-shadow: 0 0 8px rgb(4, 0, 255);}
+
+
+.infoSitePortada {
+  font-size: 1rem;
+  color: #adadad;
+  margin: 5px 0;
+}
+
+

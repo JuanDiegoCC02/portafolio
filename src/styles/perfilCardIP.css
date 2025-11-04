@@ -1,0 +1,99 @@
+/* Título de la página */
+.containerTitlePage {
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+.titlePage {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e5e0ffe7;
+  border-bottom: 3px groove #1100f8;
+  display: inline-block;
+  padding: 9px;
+  text-shadow: 0 0 8px  rgb(162, 112, 255);
+  letter-spacing: 1px;
+}
+
+
+.containerNamePerfil {
+  text-align: center;
+  margin-bottom: 25px;
+
+  margin: auto;
+}
+
+.titleNamePerfil {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+  text-shadow: 0 0 8px rgb(4, 0, 255);
+}
+
+.studyNamePerfil {
+  font-size: 1.2rem;
+  color: #adadad;
+  font-weight: 400;
+
+}
+
+
+.containerInfoMe, .containerTecnologias, .containerHerramientas {
+  background: #202327; 
+  border-radius: 14px;
+  padding: 25px;
+  margin: 35px auto;
+  max-width: 900px;
+  box-shadow: 0 6px 16px rgba(43, 3, 221, 0.466);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.containerInfoMe:hover, .containerTecnologias:hover, .containerHerramientas:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(147, 228, 253, 0.699);
+}
+
+.title_sobreMi, .titleTecnologias, .titleHerramientas {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #b3b2fff1;
+  margin-bottom: 12px;
+}
+
+
+.p_infoMe {
+  font-size: 1.04rem;
+  color: #e2e8f0e5;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+
+.ulTecnologias, .ulHerramientas {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.liTecnologias, .liHerramientas {
+  background: #456797c4; 
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: default;
+}
+
+.liTecnologias:hover, .liHerramientas:hover {
+  background: #0e013b;
+  color: #fcf268;
+  transform: scale(1.05);
+}

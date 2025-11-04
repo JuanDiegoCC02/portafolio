@@ -1,0 +1,93 @@
+/* ===== CONTENEDOR GENERAL ===== */
+.allContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: #0d0d0d; /* Fondo oscuro */
+}
+
+/* ===== CARD ===== */
+.cardInfoProyecto {
+  background: #111827;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  color: #e5e7eb;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cardInfoProyecto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.8);
+}
+
+/* ===== IMAGEN ===== */
+.imgCardProyecto {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.cardInfoProyecto:hover .imgCardProyecto {
+  transform: scale(1.03);
+}
+
+/* ===== TEXTO ===== */
+.titleCardProyecto {
+  font-size: 1.5rem;
+  color: #38bdf8; /* Azul profesional */
+  margin-bottom: 0.75rem;
+}
+
+.descCarfProyecto {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+/* ===== LISTA ===== */
+.ulCardProyecto {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.liTecnoProyecto,
+.liAlmaceProyecto {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  margin: 0.3rem 0;
+}
+
+/* ===== LINK GITHUB ===== */
+.linkGitProyecto {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.6rem 1.2rem;
+  background: transparent;
+  border: 2px solid #38bdf8;
+  border-radius: 0.75rem;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.linkGitProyecto:hover {
+  background: #38bdf8;
+  color: #0d0d0d;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.5);
+}
+
+/* ===== SEPARADOR ===== */
+.cardInfoProyecto hr {
+  border: none;
+  height: 1px;
+  background: rgba(229, 231, 235, 0.2);
+  margin-top: 1.5rem;
+}

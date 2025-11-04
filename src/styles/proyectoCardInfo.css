@@ -1,0 +1,95 @@
+/* Contenedor de la card */
+.container-CardInfoProyecto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 14px;
+  padding: 24px;
+  max-width: 650px;
+  margin: 40px auto;  /* centra en horizontal */
+  color: #2c2c2c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* centra títulos y textos */
+}
+
+.container-CardInfoProyecto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+}
+
+/* Título */
+.titleInfoProyecto {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Imagen */
+.IMGInfoProyecto {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Texto */
+.detallePagInfoProyecto {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.descInfoProyecto {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* Lista */
+.UlProyectoInfo {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+  width: 100%;
+}
+
+.LiProyectoInfo {
+  font-size: 0.95rem;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  text-align: left;
+}
+
+/* Botón GitHub */
+.LinkGithubInfoProyecto {
+  display: inline-block;
+  text-decoration: none;
+  background: #24292f; /* color GitHub */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.LinkGithubInfoProyecto:hover {
+  background: #444c56;
+}
