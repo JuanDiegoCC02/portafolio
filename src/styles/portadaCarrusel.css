@@ -1,106 +1,105 @@
-.allDivCarrousel {
+.carousel-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7rem 4rem; 
-  color: white ;
-  max-width: 1000px; 
-  width: 95%; 
+  padding: 7rem 4rem;
+  color: white;
+  max-width: 1000px;
+  width: 95%;
   margin: 3rem auto;
-  border-radius: 8px; 
+  border-radius: 8px;
   background: linear-gradient(rgb(2, 2, 2), rgb(27, 4, 90));
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.containerCardCarrousel {
-  text-align: left;
-  padding: 0;
-  margin-bottom: 2rem;
+.carousel-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
   width: 100%;
-  display: flex; 
-  gap: 40px; 
-  align-items: center; 
+  text-align: left;
 }
 
-.imgCardCarrousel {
-  width: 65%; 
-  max-height: 600px; 
+.carousel-image {
+  width: 65%;
+  max-height: 600px;
   object-fit: cover;
-  border-radius: 4px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); 
+  border-radius: 6px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
 }
 
-.textCarrouselContent {
-    width: 35%; 
-    padding-top: 20px;
+.carousel-image:hover {
+  transform: scale(1.02);
 }
 
-.titleCardCarrousel {
-  font-size: 3rem; 
+.carousel-text {
+  width: 35%;
+}
+
+.carousel-title {
+  font-size: 2.8rem;
   font-weight: 800;
-  color: var(--color-acento); 
-  margin-top: 0;
+  color: var(--color-acento);
   margin-bottom: 1.5rem;
-  border-bottom: 4px solid var(--color-detalle); 
-  padding-bottom: 15px;
+  border-bottom: 4px solid var(--color-detalle);
+  padding-bottom: 10px;
 }
 
-.descCardCarrousel {
+.carousel-description {
   font-size: 1.2rem;
   line-height: 1.8;
   color: var(--color-texto-claro);
   margin-bottom: 30px;
 }
 
-.divCarrousel-buttons {
+.carousel-controls {
   display: flex;
   justify-content: center;
-  gap: 0.1rem;
-  margin-top: 11%;
+  gap: 1rem;
+  margin-top: 3rem;
 }
 
-.btnLeft, .btnRight {
-
-  background: rgba(29, 4, 59, 0.986); 
-  padding: 3%;
+.carousel-btn {
+  background: rgba(29, 4, 59, 0.986);
   border: 3px solid black;
-  border-radius: 4px; /* Bordes cuadrados sutiles */
-  margin: 5%;
-  width: auto;
-  height: auto;
-  font-size: 1.7rem;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.6rem;
+  color: white;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.btnLeft:hover, .btnRight:hover {
+.carousel-btn:hover {
   background-color: rgba(214, 214, 214, 0.925);
-  
+  color: black;
+  transform: scale(1.1);
+}
 
-
+/* 📱 Responsivo */
 @media (max-width: 900px) {
-  .allDivCarrousel {
-     padding: 3rem 1.5rem;
-  }
-  .containerCardCarrousel {
-    flex-direction: column; 
-    text-align: center;
-    gap: 20px;
+  .carousel-wrapper {
+    padding: 3rem 1.5rem;
   }
 
-  .imgCardCarrousel,
-  .textCarrouselContent {
-    width: 100%; 
+  .carousel-card {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
   }
-  
-  .imgCardCarrousel {
+
+  .carousel-image {
+    width: 100%;
     max-height: 350px;
   }
 
-  .titleCardCarrousel {
-      text-align: center;
-      font-size: 2.2rem;
-      border-bottom: none;
-      padding-bottom: 0;
+  .carousel-text {
+    width: 100%;
+  }
+
+  .carousel-title {
+    font-size: 2.2rem;
+    border-bottom: none;
   }
 }
