@@ -33,9 +33,11 @@ function PortafolioFooter() {
              <img className='iconFooter' src={email} width={45} height={45}  alt="emailIcon" onClick={handleEmail} />
             </li>
 
-            <li><a  href="public/CV JDiego.pdf"  target="_blank"  rel="noopener noreferrer">
+            <li>
+              <a  href="/CV JDiego.pdf"  target="_blank"  rel="noopener noreferrer">
              <img className='iconFooter' src={cv}  width={45} height={45} alt="cvIcon" />
-            </a></li>
+            </a>
+            </li>
         </ul>
     </div>
 

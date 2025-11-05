@@ -9,9 +9,9 @@ function PortadaCardPerfil() {
     <div>
 
     <div className='containerFtPerfilPortd'>
-        <a href="/perfil">
+      <Link to= "/perfil">
         < img link src={ft_Perfil} alt="Foto perfil"  width={150} height={150} className='FtPerfilPortada'/>
-        </a>
+       </Link>
     </div>
 
         <div className='containerCardPerfil'>

@@ -27,20 +27,20 @@ function PortadaCarrouselProyectos() {
   const { src, title, desc } = proyectos[index];
 
   return (
-    <div className="carousel-wrapper">
-      <div className="carousel-card">
+    <div className="portadaAllCarousel">
+      <div className="portadaCarousel-card">
         <Link to="/proyectosPage">
-          <img className="carousel-image" src={src} alt={title} />
+          <img className="portadaCarousel-image" src={src} alt={title} />
         </Link>
-        <div className="carousel-text">
-          <h3 className="carousel-title">{title}</h3>
-          <p className="carousel-description">{desc}</p>
+        <div className="portadaCarousel-text">
+          <h3 className="portadaCarousel-title">{title}</h3>
+          <p className="portadaCarousel-description">{desc}</p>
         </div>
       </div>
 
-      <div className="carousel-controls">
-        <button className="carousel-btn prev" onClick={prevSlide}>⬅️</button>
-        <button className="carousel-btn next" onClick={nextSlide}>➡️</button>
+      <div className="portadaCarousel-controls">
+        <button className="portadaCarousel-btn prev" onClick={prevSlide}>⬅️</button>
+        <button className="portadaCarousel-btn next" onClick={nextSlide}>➡️</button>
       </div>
     </div>
   );

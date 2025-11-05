@@ -69,7 +69,7 @@ const cardsProyectos = [
      tecno: "en desarrollo...",
      almace: "en desarrollo...",
     secondaryImgs: [
-      { src: proximosProyectos, alt: "BE principal" }, 
+      { src: proximosProyectos, alt: "Mas proyectos proximamente" }, 
     
     ]
   }
@@ -129,7 +129,7 @@ function CarrouselProyectosPage() {
   
       <div className="pryectos2CardsCarrouselContainer">
         <div className="containerCardCarrousel">
-          <img className='imgCardProyectos' src={aloneProject.src} alt={aloneProject.title}/>
+          <img className='imgCardProyectos'  src={aloneProject.src} alt={aloneProject.title}/>
           <h3 className='titleCardProyectos'>{aloneProject.title}</h3>
           <p className='descCardProyectos'>{aloneProject.desc}</p>
           <ul className='ulCardProyectos'>
