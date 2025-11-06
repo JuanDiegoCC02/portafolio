@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/PortadaNav.css";
 
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function PortafolioNav() {
 
@@ -9,9 +9,9 @@ function PortafolioNav() {
         
       <div className='containerNavPortada'>
         <ul className='ulNavPortada'>
-          <li className='liNavPortada'><Link className='linkNavPortada' to="/">Portada</Link></li>
-          <li className='liNavPortada'><Link className='linkNavPortada' to="/perfil">Perfil</Link></li>
-          <li className='liNavPortada'><Link className='linkNavPortada' to="/proyectosPage">Proyectos</Link></li>
+          <li className='liNavPortada'><NavLink className='linkNavPortada' to="/">Portada</NavLink></li>
+          <li className='liNavPortada'><NavLink className='linkNavPortada' to="/perfil">Perfil</NavLink></li>
+          <li className='liNavPortada'><NavLink className='linkNavPortada' to="/proyectosPage">Proyectos</NavLink></li>
 
         </ul>
       </div>

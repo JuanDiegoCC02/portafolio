@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: radial-gradient( rgb(0, 0, 0), #0e024bee );
+  background: radial-gradient( rgb(0, 0, 0), #0d004dee, rgba(157, 167, 253, 0.534) );
   backdrop-filter: blur(8px); 
   padding: 15px 40px;
   border-radius: 5px;
@@ -36,13 +36,15 @@
 .liNavPortada a:hover {
   color: #00ccffd3; 
   border-bottom: 2px solid #47a6fa;
- text-shadow: 0 0 8px rgb(0, 26, 255);
+  text-shadow: 0 0 8px rgb(0, 26, 255);
 }
 
 
 .liNavPortada a.active {
-  color: #38bdf8;
-  border-bottom: 2px solid #8dd7f7;
+  color: #00ccffd3; 
+  border-bottom: 2px solid #47a6fa;
+  text-shadow: 0 2px 8px rgb(38, 0, 255);
+  border-bottom: 2px groove #869faa;
 }
 
 
