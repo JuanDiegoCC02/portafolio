@@ -1,13 +1,13 @@
-/* ===== CONTENEDOR GENERAL ===== */
+
 .allContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   padding: 2rem;
-  background: #0d0d0d; /* Fondo oscuro */
+  background: #0d0d0d; 
 }
 
-/* ===== CARD ===== */
+
 .cardInfoProyecto {
   background: #111827;
   border-radius: 1.25rem;
@@ -22,7 +22,7 @@
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.8);
 }
 
-/* ===== IMAGEN ===== */
+
 .imgCardProyecto {
   width: 100%;
   height: 200px;
@@ -36,10 +36,10 @@
   transform: scale(1.03);
 }
 
-/* ===== TEXTO ===== */
+
 .titleCardProyecto {
   font-size: 1.5rem;
-  color: #38bdf8; /* Azul profesional */
+  color: #38bdf8;
   margin-bottom: 0.75rem;
 }
 
@@ -50,7 +50,6 @@
   margin-bottom: 1rem;
 }
 
-/* ===== LISTA ===== */
 .ulCardProyecto {
   list-style: none;
   padding: 0;
@@ -64,7 +63,7 @@
   margin: 0.3rem 0;
 }
 
-/* ===== LINK GITHUB ===== */
+
 .linkGitProyecto {
   display: inline-block;
   margin-top: 0.75rem;
@@ -84,7 +83,7 @@
   box-shadow: 0 4px 12px rgba(56, 189, 248, 0.5);
 }
 
-/* ===== SEPARADOR ===== */
+
 .cardInfoProyecto hr {
   border: none;
   height: 1px;

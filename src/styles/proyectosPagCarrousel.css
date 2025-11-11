@@ -121,10 +121,10 @@
     margin-top: 20px;
     padding: 10px 25px;
     background-color: transparent;
-    color: #ffffff;
+    color: #34e7ff;
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid #ffffff;
+    border: 2px solid #35c6ff;
     border-radius: 6px;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
     text-transform: uppercase;
@@ -132,9 +132,9 @@
 }
 
 .linkGitProyectos:hover {
-    background-color: #00aaff;
-    border-color: #00aaff;
-    color: #0d0d0d;
+    background-color: #073946a9;
+    border-color: #44c5f8;
+    color: #f3ff51;
     box-shadow: 0 0 10px rgba(0, 170, 255, 0.7);
 }
 
@@ -149,8 +149,8 @@
 
 .divButtonsCarrpuselProyectos .btnLeft,
 .divButtonsCarrpuselProyectos .btnRight {
-    background-color: #1f1f1f;
-    color: #02ccffe3;
+    background-color: #000000;
+    color: #57cfff;
     border: 2px solid #00aaff;
     padding: 12px 25px;
     font-size: 17px;
@@ -165,8 +165,8 @@
 
 .divButtonsCarrpuselProyectos .btnLeft:hover,
 .divButtonsCarrpuselProyectos .btnRight:hover {
-    background-color: #00aaff;
-    color: #0d0d0d;
+    background-color: #303030;
+    color: #f1ff70;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 170, 255, 0.4);
 }

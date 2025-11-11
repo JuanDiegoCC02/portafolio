@@ -23,7 +23,8 @@
 .titleInfoProyecto {
     font-size: 2.2rem;
     font-weight: 800;
-    color: #00aaff;
+    color: #00b7ffe7;
+    text-shadow: 0 0 8px  rgb(71, 0, 204);
     margin-bottom: 25px;
     border-bottom: 3px solid #00aaff;
     padding-bottom: 10px;
@@ -35,14 +36,14 @@
 .detallePagInfoProyecto {
     font-size: 1.1rem;
     font-weight: 500;
-    color: #ffffff;
+    color: #c4ecfff3;
     line-height: 1.8;
     margin-bottom: 25px;
 }
 
 .descInfoProyecto {
     font-size: 1rem;
-    color: #b0b0b0;
+    color: #75d2e9e5;
     line-height: 1.6;
     margin-bottom: 30px;
     border-left: 3px solid #333;
@@ -78,35 +79,37 @@
     padding: 8px 15px;
     border-radius: 4px;
     background-color: #00aaff1a;
-    border: 1px solid #00aaff;
-    color: #00aaff;
+     border: 2px solid #35c6ff;
+    color: #34e7ff;
     font-weight: 600;
     text-align: center;
     transition: background-color 0.3s;
 }
 
 .LiProyectoInfo:hover {
-    background-color: #00aaff40;
+    background-color: #000000;
+    color: rgba(253, 255, 125, 0.966);
 }
 
 .LinkGithubInfoProyecto {
     display: inline-block;
     text-decoration: none;
-    background: #24292f;
-    color: #fff;
+    background-color: transparent;
+     color: #34e7ff;
     padding: 12px 25px;
     border-radius: 30px;
     font-weight: 600;
     transition: background 0.3s ease, transform 0.3s;
-    border: 2px solid #24292f;
+      border: 2px solid #35c6ff;
 }
 
 .LinkGithubInfoProyecto:hover {
-    background: #00aaff;
-    color: #0d0d0d;
-    border-color: #00aaff;
+      background-color: #073946a9;
+    border-color: #44c5f8;
+    color: #f3ff51;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.7);
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5);
+  
 }
 
 @media (max-width: 768px) {

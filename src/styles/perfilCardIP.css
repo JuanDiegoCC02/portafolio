@@ -52,13 +52,13 @@
 
 .containerInfoMe:hover, .containerTecnologias:hover, .containerHerramientas:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(147, 228, 253, 0.699);
+  box-shadow: 0 8px 20px rgba(252, 255, 87, 0.699);
 }
 
 .title_sobreMi, .titleTecnologias, .titleHerramientas {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #b3b2fff1;
+  color: #5acbff;
   margin-bottom: 12px;
 }
 
