@@ -13,9 +13,18 @@ function ProyectoCardInfo() {
       title: "Numb Astro",
       infoPag:
         "Numb Astro es una aplicación web diseñada para ayudar a los usuarios a desarrollar y mantener nuevos hábitos en su vida cotidiana, combinando motivación, seguimiento visual y una experiencia temática inspirada en el espacio. La plataforma integra un mapa estelar interactivo y un sistema de recompensas (“loot”) que representan el progreso personal como si el usuario estuviera explorando su propio universo interior. Cada hábito cumplido equivale a una nueva estrella descubierta, y cada logro desbloqueado impulsa al usuario a avanzar hacia nuevas constelaciones. Esta dinámica convierte la creación de hábitos en una experiencia lúdica, visual y motivadora, donde el crecimiento personal se refleja como un viaje cósmico.",
-      descrp:
-        "Características principales: Temática galáctica y visual inmersiva: La interfaz simula una atmósfera espacial donde los hábitos, logros y rutinas se representan mediante elementos astrales, ofreciendo una experiencia envolvente. Mapa estelar y logros: El usuario puede visualizar su progreso a través de un mapa estelar interactivo, donde cada meta completada ilumina nuevas estrellas o planetas. Sistema de “loot” (recompensas): Por cada avance, el usuario obtiene recompensas simbólicas que refuerzan la constancia y el cumplimiento de objetivos. Gestión y moderación de usuarios: Incluye paneles de administración que permiten controlar registros, roles y actividades, garantizando un entorno ordenado y funcional. Privacidad y seguridad: Implementa validaciones, autenticación y control de acceso para proteger la información personal. Además, cuenta con términos y condiciones claros que regulan el uso responsable de la plataforma. Seguimiento y análisis gráfico: Los usuarios pueden visualizar su evolución mediante gráficos de rendimiento, facilitando el análisis de sus hábitos y el reconocimiento de sus logros.",
-      github: "https://github.com/JuanDiegoCC02/Agenda-Numb-Astro.git",
+     
+      descrp1:
+        "Implementa Registro e Inicio de Sesión con validación de email, asegurando la autenticidad del usuario en este viaje cosmico.",
+      descrp2:
+        "El usuario define sus objetivos mediante un formulario de tareas (hábito a cumplir). Dispone de una agenda para registrar, administrar y hacer seguimiento de las tareas, permitiendo la actualización de estado o edición de la información.",
+      descrp3:
+        "El Mapa Estelar es la representación visual del progreso. Cada tarea completada (hábito positivo) se traduce en una nueva estrella o planeta iluminado, impulsando el avance hacia nuevas constelaciones.",
+      descrp4:
+        " Por cada avance significativo, el usuario desbloquea un botín de memorias o recompensas simbólicas. Este feedback positivo refuerza la constancia y la generación de hábitos seguros.",
+      descrp5:
+        "Administración para la pagina la cual cuenta con un sistema de administración dando seguimiento alos usuarios sus habitos y el compriso con estos ademas de brindar un constante mantenimiento y actualizaciones a la paginá web. ",
+  
       tecno: "HTML, JavaScript, React, Css ",
       almace: "Db Json, LocalStorage, y Cookies",
     },
@@ -23,9 +32,18 @@ function ProyectoCardInfo() {
       src: homeBE,
       title: "Shared Reading",
       infoPag:
-        "Books Exchange es una aplicación web diseñada para facilitar el intercambio de libros físicos entre usuarios, promoviendo la reutilización de ejemplares, el hábito de la lectura y el fortalecimiento de la interacción social en comunidades. La plataforma busca que los libros que ya fueron leídos no queden olvidados en estanterías: en su lugar, circulen y lleguen a nuevas manos donde pueden inspirar, educar y entretener nuevamente.",
-      descrp:
-        "Registro / Autenticación: el usuario crea una cuenta con verificación básica (email). Publicar un libro: el usuario sube información del libro (título, autor, estado físico, sinopsis, fotografías) y selecciona si lo ofrece en trueque, préstamo o donación. Buscar y filtrar: otros usuarios buscan por título, autor, género, localidad o estado del libro. Favoritos: los usuarios guardan libros en favoritos. Contacto y acuerdo: la plataforma facilita la comunicación segura entre usuarios para acordar el intercambio. Confirmación y seguimiento: tras el intercambio, ambas partes confirman recepción; esto alimenta reputaciones y estadísticas de uso.",
+        "Shared Reading es una aplicación web diseñada para facilitar el intercambio de libros físicos entre usuarios, promoviendo la reutilización de ejemplares, el hábito de la lectura y el fortalecimiento de la interacción social en comunidades. La plataforma busca que los libros que ya fueron leídos no queden olvidados en estanterías: en su lugar, circulen y lleguen a nuevas manos donde pueden inspirar, educar y entretener nuevamente.",
+      descrp1:
+        "Registro / Autenticación: el usuario crea una cuenta con verificación en base a el email.",
+      descrp2:
+        "Publicacion de un libro: el usuario sube información del libro publicando (título, autor, estado físico, descriipcióny y fotografías).",
+      descrp3:
+        "Buscar y filtrar: Los usuarios puede buscar por título, autor, género, localidad y estado de disponibilidad del libro. Tambien logrando añadir a una lista personal de libros favoritos.",
+      descrp4:
+        " Confirmación y seguimiento: tras el intercambio ambos usuarios confirma que se intercambio el libro y se registra ayudando a los administradores a dar seguimiento a estadisitcas.",
+      descrp5:
+        "Administracion la pagina cuenta con un sistema de administracon dando seguimiento a los usuarios y los intercambios de libros buscando la seguridad la transpariencia y el mantenimiento de la pagina web. ",
+
       github: "https://github.com/JuanDiegoCC02/books-exchange.git",
       tecno: "HTML, JavaScript, React, CSS ",
       almace: "Db Json, LocalStorage y Cookies",
@@ -48,7 +66,15 @@ function ProyectoCardInfo() {
       <h2 className="titleInfoProyecto">{proyecto.title}</h2>
      
       <p className="detallePagInfoProyecto">{proyecto.infoPag}</p>
-      <p className="descInfoProyecto">{proyecto.descrp}</p>
+      <ul>
+        <li className="descrLi">{proyecto.descrp1} </li>
+        <li className="descrLi">{proyecto.descrp2}</li>
+        <li className="descrLi">{proyecto.descrp3}</li>
+        <li className="descrLi">{proyecto.descrp4}</li>
+        <li className="descrLi">{proyecto.descrp5}</li>
+      </ul>
+
+      
       <ul className="UlProyectoInfo">
         <li className="LiProyectoInfo">Tecnologias: {proyecto.tecno}</li>
         <li className="LiProyectoInfo">Almacenamiento: {proyecto.almace}</li>

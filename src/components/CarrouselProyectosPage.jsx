@@ -48,7 +48,7 @@ const cardsProyectos = [
   {
     src: homeBE,
     title: "Books Exchange",
-    desc: "Plataforma web para el intercambio de libros, donde los usuarios pueden publicar, buscar y encontrar libros conectando y compartiendo nuevas lecturas dando así un nuevo uso al libro.",
+    desc: "Shared Reading es una plataforma web de intercambio de libros construida con React que conecta a los amantes de la lectura. Siendo nuestro objetivo darle una nueva vida a esos libros que ya leíste, fomentando la lectura y promoviendo la interacción social entre los lectores a través de la cultura del compartir.",
      github: "https://github.com/JuanDiegoCC02/books-exchange.git",
      tecno: "HTML, JavaScript, React, CSS ",
      almace: "Db Json, LocalStorage y Cookies",

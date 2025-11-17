@@ -9,8 +9,8 @@
 .FtPerfilPortada {
   margin-top: 15%;
   border-radius: 50%;
-  border: 6px solid #fcff31cb;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  border: 6px solid hsla(197, 100%, 38%, 0.411);
+  box-shadow: 0 4px 15px rgb(0, 217, 255);
   transition: transform 0.3s ease-in-out;
   object-fit: cover;
   width: 150px;

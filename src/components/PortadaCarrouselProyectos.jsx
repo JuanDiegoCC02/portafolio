@@ -7,7 +7,7 @@ import homeNA from "../imagenesNumbAstro/homeNA.PNG"
 function PortadaCarrouselProyectos() {
   const proyectos = [
     { src: homeNA, title: "Agenda Numb Astro", desc: "Aplicación tipo agenda para organizar rutinas y hábitos." },
-    { src: homeBE, title: "Books Exchange", desc: "Plataforma web para intercambio de libros entre usuarios." }
+    { src: homeBE, title: "Shared Reading ", desc: "Shared Reading es una plataforma web de intercambio de libros construida con React que conecta a los amantes de la lectura. Siendo nuestro objetivo darle una nueva vida a esos libros que ya leíste, fomentando la lectura y promoviendo la interacción social entre los lectores a través de la cultura del compartir." }
   ];
 
   const [index, setIndex] = useState(0);

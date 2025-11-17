@@ -37,7 +37,7 @@
     background: rgba(0, 0, 0, 0.7);
     color: #00aaff;
     border: 2px solid #4401af;
-    padding: 6px 10px;
+    padding: 16px 20px;
     font-size: 20px;
     cursor: pointer;
     z-index: 10;
@@ -145,6 +145,7 @@
     gap: 40px;
     padding: 0 10px;
     margin-top: 15px;
+  
 }
 
 .divButtonsCarrpuselProyectos .btnLeft,
@@ -166,7 +167,7 @@
 .divButtonsCarrpuselProyectos .btnLeft:hover,
 .divButtonsCarrpuselProyectos .btnRight:hover {
     background-color: #303030;
-    color: #f1ff70;
+    color: #fcff66;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 170, 255, 0.4);
 }
@@ -243,19 +244,5 @@
         font-size: 1em;
     }
 
-    .btnImgLeft,
-    .btnImgRight {
-        padding: 8px 10px;
-        font-size: 16px;
-        top: 40%;
-        transform: translateY(-40%);
-    }
-
-    .btnImgLeft {
-        left: 10px;
-    }
-
-    .btnImgRight {
-        right: 10px;
-    }
+    
 }
