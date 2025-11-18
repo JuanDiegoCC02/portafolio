@@ -8,11 +8,11 @@
 .titlePage {
   font-size: 2rem;
   font-weight: 700;
-  color: #e5e0ffe7;
-  border-bottom: 3px groove #1100f8;
+  color: #cececed7;
+  border-bottom: 3px groove #b4b4b4;
   display: inline-block;
   padding: 9px;
-  text-shadow: 0 0 8px  rgb(162, 112, 255);
+  text-shadow: 0 0 8px  rgb(30, 128, 255);
   letter-spacing: 1px;
 }
 
@@ -46,13 +46,13 @@
   padding: 25px;
   margin: 35px auto;
   max-width: 900px;
-  box-shadow: 0 6px 16px rgba(43, 3, 221, 0.466);
+  box-shadow: 0 6px 16px rgba(202, 202, 202, 0.596);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .containerInfoMe:hover, .containerTecnologias:hover, .containerHerramientas:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(252, 255, 87, 0.699);
+  box-shadow: 0 8px 20px rgba(8, 95, 177, 0.884);
 }
 
 .title_sobreMi, .titleTecnologias, .titleHerramientas {
@@ -82,7 +82,7 @@
 
 
 .liTecnologias, .liHerramientas {
-  background: #456797c4; 
+  background: #5d6e68d0; 
   color: #ffffff;
   padding: 8px 16px;
   border-radius: 10px;
@@ -90,10 +90,12 @@
   font-weight: 500;
   transition: background 0.3s ease, transform 0.2s ease;
   cursor: default;
+  border:solid 1px #5d6e68d0 ;
 }
 
 .liTecnologias:hover, .liHerramientas:hover {
-  background: #0e013b;
+  background: #142b5c;
   color: #fcf268;
   transform: scale(1.05);
+  border: solid 1px gold;
 }

@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: radial-gradient( rgb(0, 0, 0), #0f015763, rgba(72, 52, 255, 0.185) );
+  background: radial-gradient( rgb(0, 0, 0), #27224185, rgba(153, 168, 255, 0.404) );
   backdrop-filter: blur(8px); 
   padding: 15px 40px;
   border-radius: 5px;
@@ -26,7 +26,7 @@
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
-  color: #70faffea; 
+  color: rgb(149, 195, 255); 
   transition: color 0.3s ease, border-bottom 0.3s ease;
   padding-bottom: 3px;
   border-bottom: 2px solid transparent;
@@ -34,17 +34,16 @@
 
 
 .liNavPortada a:hover {
-  color: #00ccffd3; 
-  border-bottom: 2px solid #47a6fa;
-  text-shadow: 0 0 8px rgb(0, 26, 255);
+    color: #ffffffd3; 
+  text-shadow: 0 0 8px rgb(98, 0, 255);
+  border-bottom: 2px groove #c2c2c2d7;
 }
 
 
 .liNavPortada a.active {
-  color: #00ccffd3; 
-  border-bottom: 2px solid #47a6fa;
-  text-shadow: 0 2px 8px rgb(38, 0, 255);
-  border-bottom: 2px groove #869faa;
+  color: #ffffffe1; 
+  text-shadow: 0 0 8px rgb(98, 0, 255);
+  border-bottom: 2px groove #c2c2c2;
 }
 
 
