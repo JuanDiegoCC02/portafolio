@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; 
+import React, { useState } from 'react'; 
 import "../styles/proyectosPagCarrousel.css";
 import proximosProyectos from "../imagenes/proximosProyectos.PNG";
 
@@ -19,6 +18,7 @@ import profileNA from "../imagenesNumbAstro/profileNA.PNG";
 import AdminUsersGet from "../imagenesNumbAstro/AdminUsersGet.PNG";
 import UsersChart from "../imagenesNumbAstro/UsersChart.PNG";
 import AdminTasks from "../imagenesNumbAstro/AdminTasks.PNG";
+import ProyectoCardInfo from './ProyectoCardInfo';
 
 
 
@@ -47,7 +47,7 @@ const cardsProyectos = [
   },
   {
     src: homeBE,
-    title: "Books Exchange",
+    title: "Shared Reading",
     desc: "Shared Reading es una plataforma web de intercambio de libros construida con React que conecta a los amantes de la lectura. Siendo nuestro objetivo darle una nueva vida a esos libros que ya leíste, fomentando la lectura y promoviendo la interacción social entre los lectores a través de la cultura del compartir.",
      github: "https://github.com/JuanDiegoCC02/books-exchange.git",
      tecno: "HTML, JavaScript, React, CSS ",
@@ -77,11 +77,24 @@ const cardsProyectos = [
 
 
 function CarrouselProyectosPage() {
+
+ const [mainIndex, setMainIndex] = useState(0);
+
+ const [secondaryIndex, setSecondaryIndex] = useState(0);
+
+  const [modalOpen, setModalOpen] = useState(false);
   
-  const [mainIndex, setMainIndex] = useState(0);
+  const [selectedProjectTitle, setSelectedProjectTitle] = useState(null); 
 
-  const [secondaryIndex, setSecondaryIndex] = useState(0);
+  const openModal = () => {
+    setSelectedProjectTitle(cardsProyectos[mainIndex].title);
+    setModalOpen(true);
+  };
 
+  const closeModal = () => {
+    setModalOpen(false);
+    setSelectedProjectTitle(null);
+  };
   
 
   const nextMainSlide = () => {
@@ -119,9 +132,9 @@ function CarrouselProyectosPage() {
 
     
       <div className="proyecto1CardsCarrouselContainer">
-        <Link to={`/proyectosInfo/${mainIndex}`}>
-        <img className='imgCardProyecto' src={aloneProject.secondaryImgs[secondaryIndex].src} alt={aloneProject.secondaryImgs[secondaryIndex].alt} />
-       </Link>
+        
+        <img className='imgCardProyecto'  onClick={openModal} src={aloneProject.secondaryImgs[secondaryIndex].src} alt={aloneProject.secondaryImgs[secondaryIndex].alt} />
+       
         <button className='btnImgLeft' onClick={prevSecondarySlide}> ⬅️ </button>
         <button className='btnImgRight' onClick={nextSecondarySlide}> ➡️ </button>
       </div>
@@ -129,7 +142,7 @@ function CarrouselProyectosPage() {
   
       <div className="pryectos2CardsCarrouselContainer">
         <div className="containerCardCarrousel">
-          <img className='imgCardProyectos'  src={aloneProject.src} alt={aloneProject.title}/>
+          <img className='imgCardProyectos'  src={aloneProject.src} alt={aloneProject.title}  />
           <h3 className='titleCardProyectos'>{aloneProject.title}</h3>
           <p className='descCardProyectos'>{aloneProject.desc}</p>
           <ul className='ulCardProyectos'>
@@ -146,6 +159,10 @@ function CarrouselProyectosPage() {
         </div>
       </div>
       
+        {modalOpen && selectedProjectTitle && (
+        <ProyectoCardInfo projectTitle={selectedProjectTitle} onClose={closeModal} />
+      )}
+     
   
     </div>
   );

@@ -46,7 +46,7 @@
   padding: 25px;
   margin: 35px auto;
   max-width: 900px;
-  box-shadow: 0 6px 16px rgba(202, 202, 202, 0.596);
+  box-shadow: 0 6px 16px rgba(202, 202, 202, 0.863);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -82,8 +82,8 @@
 
 
 .liTecnologias, .liHerramientas {
-  background: #5d6e68d0; 
-  color: #ffffff;
+  background: #88f1ffd0; 
+  color: #000000;
   padding: 8px 16px;
   border-radius: 10px;
   font-size: 0.95rem;
