@@ -1,12 +1,29 @@
+.containerTitleProyectos{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titleProyectosTCarrousel{
+      font-size: 2rem;
+  font-weight: 700;
+  color: #cececed7;
+  border-bottom: 3px groove #b4b4b4;
+  display: inline-block;
+  padding: 9px;
+  text-shadow: 0 0 8px  rgb(30, 128, 255);
+  letter-spacing: 1px;
+}
+
+
 .divAllCarrousel {
     max-width: 1100px;
     margin: 40px auto;
     padding: 30px;
-    background-color: #0d0d0d;
+    background-color: #44444438;
     color: #e0e0e0;
     border-radius: 12px;
-    border: 1px solid rgba(0, 170, 255, 0.2);
-    box-shadow: 0 0 25px rgba(0, 170, 255, 0.1), 0 10px 30px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(179, 179, 179, 0.801);
+    box-shadow: 0 0 25px rgba(126, 126, 126, 0.466), 0 10px 30px rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -33,10 +50,10 @@
 .btnImgRight {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(200%);
     background: rgba(0, 0, 0, 0.7);
     color: #00aaff;
-    border: 2px solid #4401af;
+    border: 2px solid #444444;
     padding: 16px 20px;
     font-size: 20px;
     cursor: pointer;
@@ -48,7 +65,7 @@
 .btnImgRight:hover {
     background-color: #c5c5c581;
     color: #0d0d0d;
-    transform: translateY(-50%) scale(1.1);
+    transform: translateY(200%) scale(1.1);
 }
 
 .btnImgLeft {
@@ -76,19 +93,21 @@
     height: 100%;
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
+    border: 1px solid rgb(0, 217, 255);
+    box-shadow: 0 0 10px rgb(255, 255, 229);
 }
 .titleCardProyectos {
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 8px;
-    color: #00aaff;
-    text-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+    color: #cfcfcf;
+    text-shadow: 0 0 5px rgba(68, 0, 255, 0.753);
     letter-spacing: 1px;
 }
 
 .descCardProyectos {
     font-size: 1.1em;
-    color: #b0b0b0;
+    color: #ffffffd0;
     line-height: 1.5;
     max-width: 850px;
     margin: 0 auto 20px;
@@ -106,10 +125,10 @@
 
 .liTecnoProyectos,
 .liAlmaceProyectos {
-    background-color: #1a1a1a;
+    background-color: #333333;
     padding: 8px 15px;
     border-radius: 5px;
-    border-left: 3px solid #00aaff;
+    border-left: 3px solid #dcdddd;
     font-size: 0.95em;
     font-weight: 500;
     color: #ffffff;
@@ -121,7 +140,7 @@
     margin-top: 20px;
     padding: 10px 25px;
     background-color: transparent;
-    color: #34e7ff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     border: 2px solid #35c6ff;
@@ -129,6 +148,7 @@
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
     text-transform: uppercase;
     letter-spacing: 1px;
+     text-shadow: 0 0 5px rgb(68, 0, 255);
 }
 
 .linkGitProyectos:hover {
@@ -151,8 +171,8 @@
 .divButtonsCarrpuselProyectos .btnLeft,
 .divButtonsCarrpuselProyectos .btnRight {
     background-color: #000000;
-    color: #57cfff;
-    border: 2px solid #00aaff;
+    color: #b0f6ff;
+    border: 2px solid #76e4ff;
     padding: 12px 25px;
     font-size: 17px;
     font-weight: bold;
@@ -166,7 +186,7 @@
 
 .divButtonsCarrpuselProyectos .btnLeft:hover,
 .divButtonsCarrpuselProyectos .btnRight:hover {
-    background-color: #303030;
+    background-color: #222222;
     color: #fcff66;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 170, 255, 0.4);

@@ -128,11 +128,13 @@ function CarrouselProyectosPage() {
   };
 
   return (
+    <div>
+
+    <div className='containerTitleProyectos'> <h4 className='titleProyectosTCarrousel'>Proyectos</h4> </div>
+
     <div className="divAllCarrousel">
 
-    
       <div className="proyecto1CardsCarrouselContainer">
-        
         <img className='imgCardProyecto'  onClick={openModal} src={aloneProject.secondaryImgs[secondaryIndex].src} alt={aloneProject.secondaryImgs[secondaryIndex].alt} />
        
         <button className='btnImgLeft' onClick={prevSecondarySlide}> ⬅️ </button>
@@ -164,6 +166,7 @@ function CarrouselProyectosPage() {
       )}
      
   
+    </div>
     </div>
   );
 }

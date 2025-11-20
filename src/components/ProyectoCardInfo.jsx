@@ -12,7 +12,7 @@ function ProyectoCardInfo({projectTitle, onClose }) {
       src: homeNA,
       title: "Agenda Numb Astro",
       infoPag:
-        "Numb Astro es una aplicación web diseñada para ayudar a los usuarios a desarrollar hábitos...",
+        "Numb Astro es una aplicación web diseñada para ayudar a los usuarios a desarrollar y mantener nuevos hábitos en su vida cotidiana, combinando motivación, seguimiento visual y una experiencia temática inspirada en el espacio. La plataforma integra un mapa estelar interactivo y un sistema de recompensas (“loot”) que representan el progreso personal como si el usuario estuviera explorando su propio universo interior. Cada hábito cumplido equivale a una nueva estrella descubierta, y cada logro desbloqueado impulsa al usuario a avanzar hacia nuevas constelaciones. Esta dinámica convierte la creación de hábitos en una experiencia lúdica, visual y motivadora, donde el crecimiento personal se refleja como un viaje cósmico.",
       descrp1:
         "Implementa Registro e Inicio de Sesión con validación de email.",
       descrp2:
@@ -25,12 +25,13 @@ function ProyectoCardInfo({projectTitle, onClose }) {
         "Cuenta con sistema de administración para seguimiento de usuarios.",
       tecno: "HTML, JavaScript, React, CSS",
       almace: "DB Json, LocalStorage y Cookies",
+      github: "https://github.com/JuanDiegoCC02/Agenda-Numb-Astro.git"
     },
     {
       src: homeBE,
       title: "Shared Reading",
       infoPag:
-        "Shared Reading facilita el intercambio de libros físicos...",
+        "Shared Reading es una aplicación web diseñada para facilitar el intercambio de libros físicos entre usuarios, promoviendo la reutilización de ejemplares, el hábito de la lectura y el fortalecimiento de la interacción social en comunidades. La plataforma busca que los libros que ya fueron leídos no queden olvidados en estanterías: en su lugar, circulen y lleguen a nuevas manos donde pueden inspirar, educar y entretener nuevamente.",
       descrp1:
         "Registro y autenticación con validación de email.",
       descrp2:
