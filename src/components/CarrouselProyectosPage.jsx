@@ -130,9 +130,17 @@ function CarrouselProyectosPage() {
   return (
     <div>
 
-    <div className='containerTitleProyectos'> <h4 className='titleProyectosTCarrousel'>Proyectos</h4> </div>
+    <div className='containerTitleProyectos'> 
+        <h3 className='titleCardProyectos'>{aloneProject.title}</h3>
+          <p className='descCardProyectos'>{aloneProject.desc}</p>
+          <ul className='ulCardProyectos'>
+            <li className='liTecnoProyectos'>Tecnologias: {aloneProject.tecno}</li>
+            <li className='liAlmaceProyectos'>Almacenamiento: {aloneProject.almace}</li>
+          </ul>
+           </div>
 
     <div className="divAllCarrousel">
+      
 
       <div className="proyecto1CardsCarrouselContainer">
         <img className='imgCardProyecto'  onClick={openModal} src={aloneProject.secondaryImgs[secondaryIndex].src} alt={aloneProject.secondaryImgs[secondaryIndex].alt} />
@@ -141,16 +149,12 @@ function CarrouselProyectosPage() {
         <button className='btnImgRight' onClick={nextSecondarySlide}> ➡️ </button>
       </div>
 
-  
+      <div> <hr className='hrPagProyectos'/></div>
+     
       <div className="pryectos2CardsCarrouselContainer">
         <div className="containerCardCarrousel">
-          <img className='imgCardProyectos'  src={aloneProject.src} alt={aloneProject.title}  />
-          <h3 className='titleCardProyectos'>{aloneProject.title}</h3>
-          <p className='descCardProyectos'>{aloneProject.desc}</p>
-          <ul className='ulCardProyectos'>
-            <li className='liTecnoProyectos'>Tecnologias: {aloneProject.tecno}</li>
-            <li className='liAlmaceProyectos'>Almacenamiento: {aloneProject.almace}</li>
-          </ul>
+          <img className='imgCardProyectos'  src={aloneProject.src} alt={aloneProject.title}  /><br />
+        
           <a className='linkGitProyectos' href= {aloneProject.github} target="_blank" rel="noopener noreferrer">GitHub</a>
             
         </div>
